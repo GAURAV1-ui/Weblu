@@ -37,7 +37,7 @@ export default function RootLayout({
         flex flex-col
         bg-gray-50
         text-gray-950 relative
-        dark:bg-gray-900 
+        dark:bg-black 
         dark:text-gray-50 dark:text-opacity-90`}
       >
         <div className="bg-[#fbe2e3] absolute top-[-6rem] flex-1 -z-[10] right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[10rem] sm:w-[68.75rem] dark:bg-[#946263]"></div>

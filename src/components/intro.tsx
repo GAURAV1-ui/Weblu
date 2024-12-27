@@ -16,7 +16,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="flex items-center justify-center min-h-screen max-w-7xl mx-auto px-4 text-center"
+      className="flex items-center justify-center min-h-screen max-w-full mx-auto px-4 text-center"
     >
       <div>
         <Fade direction="up" delay={400} cascade damping={0.1} triggerOnce>
@@ -32,14 +32,12 @@ export default function Intro() {
             PRODUCT DESIGN
           </h1>
 
-          {/* Subheading */}
           <p className="text-sm font-inter sm:text-lg mt-4 text-gray-700 dark:text-white/80 leading-relaxed mb-8">
             Resonance is a full-service creative studio creating beautiful
             digital experiences and products.
           </p>
         </Fade>
 
-        {/* Buttons */}
         <motion.div
           className="flex flex-wrap items-center justify-center gap-6"
           initial={{ opacity: 0, y: 100 }}
