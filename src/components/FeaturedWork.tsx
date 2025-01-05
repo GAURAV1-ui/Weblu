@@ -35,10 +35,9 @@ export default function FeaturedWork() {
   return (
     <section
       id="home"
-      className="flex items-center justify-center min-h-screen w-full mx-auto text-white px-4 sm:px-8 lg:px-16"
-    >
+      className="flex items-center justify-center min-h-screen w-full mx-auto text-white px-4 sm:px-8 lg:px-16">
       <div className="w-full">
-        <Fade direction="up" delay={400} cascade damping={0.1} triggerOnce>
+        <Fade direction="up" delay={400} cascade damping={0.1} >
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div className="flex-1">
               <h1 className="font-inter text-[48px] sm:text-[64px] font-extrabold leading-tight text-white mb-4 md:mb-0">
@@ -60,7 +59,7 @@ export default function FeaturedWork() {
               className="bg-transparent backdrop-blur-[20px] border rounded-xl border-white/20 border-gray-300  overflow-hidden transform transition-all duration-300 ease-in-out"
               initial={{ opacity: 0, y: 50 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0.5 }}
+              viewport={{ once: false, amount: 0.5 }}
               transition={{
                 duration: 0.8,
                 ease: [0.25, 0.46, 0.45, 0.94],
