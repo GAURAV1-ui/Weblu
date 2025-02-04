@@ -4,7 +4,7 @@ import  Faq  from "@/components/faq";
 import ImageScroll from "@/components/ImageScroll";
 import AboutUs from "@/components/about";
 import Testimonial from "@/components/testimonial";
-import ContactForm from "@/components/contactForm";
+import Contact from "@/components/contact";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
       <ImageScroll />
       <AboutUs />
       <Testimonial />
-      <ContactForm />
+      <Contact />
     </main>
   );
 }
