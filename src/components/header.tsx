@@ -27,7 +27,6 @@ export default function Header({ links }: HeaderProps) {
         </NextLink>
       </div>
 
-      {/* Links Section */}
       <motion.div
         className="flex p-1 rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:rounded-full dark:bg-gray-950 dark:border-black/40 dark:bg-opacity-75"
         initial={{ y: -100, opacity: 0 }}
@@ -74,23 +73,21 @@ export default function Header({ links }: HeaderProps) {
       </motion.div>
 
       <div className="flex items-center">
-  <NextLink href="/contact" passHref>
-    <motion.button
-      className={clsx(
-        "px-4 py-2 font-inter font-bold rounded-full shadow-md transition-all",
-        "hover:text-gray-950 dark:hover:text-gray-300",
-        "bg-gray-100 text-gray-950", 
-        "dark:bg-gray-950 dark:text-gray-200"
-      )}
-      initial={{ x: 50, opacity: 0 }}
-      animate={{ x: 0, opacity: 1 }}
-    >
-      Contact
-    </motion.button>
-  </NextLink>
-</div>
-
-
+        <NextLink href="/contact" passHref>
+          <motion.button
+            className={clsx(
+              "px-4 py-2 font-inter font-bold rounded-full shadow-md transition-all",
+              "hover:text-gray-950 dark:hover:text-gray-300",
+              "bg-gray-100 text-gray-950",
+              "dark:bg-gray-950 dark:text-gray-200"
+            )}
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+          >
+            Contact
+          </motion.button>
+        </NextLink>
+      </div>
     </header>
   );
 }
