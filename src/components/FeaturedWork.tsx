@@ -9,25 +9,25 @@ const projects = [
     title: "LIGHTRIC MOTORS",
     category: "Photography",
     year: 2024,
-    imageUrl: "/6.webp",
+    imageUrl: "/1.jpeg",
   },
   {
     title: "POSITIVE ENERGY",
     category: "Branding",
     year: 2023,
-    imageUrl: "/6.webp",
+    imageUrl: "/2.jpeg",
   },
   {
     title: "XIONG WALL",
     category: "Marketplace",
     year: 2023,
-    imageUrl: "/6.webp",
+    imageUrl: "/3.jpeg",
   },
   {
     title: "HIDEAWAY",
     category: "Web Design",
     year: 2022,
-    imageUrl: "/6.webp",
+    imageUrl: "/4.jpeg",
   },
 ];
 

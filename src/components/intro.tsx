@@ -25,7 +25,7 @@ export default function Intro() {
             <span className="text-green-300 text-2xl">• </span> 2/5 SPOTS AVAILABLE
           </p>
 
-          <h1 className="font-sans text-[120px] font-extrabold leading-none">
+          <h1 className="font-inter text-[120px] font-extrabold leading-none">
             WEB & DIGITAL
           </h1>
           <h1 className="font-sans text-[120px] font-extrabold leading-none">
