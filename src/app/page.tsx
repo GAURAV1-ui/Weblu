@@ -1,5 +1,5 @@
 import Intro from "@/components/intro";
-import FeaturedWork from "@/components/FeaturedWork";
+import FeaturedWork from "@/components/featuredWork";
 import  Faq  from "@/components/faq";
 import ImageScroll from "@/components/ImageScroll";
 import AboutUs from "@/components/about";
@@ -8,10 +8,10 @@ import Contact from "@/components/contact";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center pt-20 md:pt-28 px-4">
+    <main className="flex flex-col items-center px-4">
       <Intro />
       <FeaturedWork />
-      <Faq />y
+      <Faq />
       <ImageScroll />
       <AboutUs />
       <Testimonial />

@@ -34,29 +34,29 @@ export default function AboutUs() {
           content that resonates with their unique preferences and habits.
         </p>
         <div className="flex items-center gap-4">
-          <span className="block font-inter text-white font-bold">Gaurav</span>
-          <span className="block font-inter text-white font-bold">Abhishek</span>
-        </div>
+          <img src="/gauravsignw.png" alt="Gaurav" className="w-50 h-20" />
+          <img src="/abhisignw.png" alt="Abhishek" className="w-50 h-20" />
+      </div>
       </motion.div>
 
       <motion.div
-        className="relative flex lg:w-1/2 justify-end mt-8 lg:mt-0"
+        className=" flex lg:w-1/2 justify-end mt-8 lg:mt-0"
         initial={{ opacity: 0, x: 50 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: false, amount: 0.5 }}
         transition={{ duration: 0.8, ease: "easeInOut" }}
       >
-        <div className="text-right">
+        <div className="">
           <h2 className="text-6xl font-sans font-extrabold uppercase">
             Voice of CE-YO.
           </h2>
-          <div className="mt-8 relative">
+          <div className="mt-8">
             <Image
-              src="/about.png"
+              src="/CEYOABHI.jpg"
               alt="CE-YO"
               width={400}
               height={400}
-              className="rounded-lg shadow-lg"
+              className="rounded-lg shadow-lg mx-auto"
             />
           </div>
         </div>

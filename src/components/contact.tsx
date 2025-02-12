@@ -77,7 +77,6 @@ const Contact = () => {
             whileHover="hover"
           >
             {platform} ↗
-            {/* Underline effect */}
             <motion.span
               className="absolute left-0 bottom-0 h-[2px] bg-white w-full"
               initial={{ scaleX: 0 }}

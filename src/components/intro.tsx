@@ -20,21 +20,19 @@ export default function Intro() {
     >
       <div>
         <Fade direction="up" delay={400} cascade damping={0.1} triggerOnce>
-
           <p className="text-gray-500 font-bold dark:text-white/80 font-inter text-sm sm:text-base mb-4">
-            <span className="text-green-300 text-2xl">• </span> 2/5 SPOTS AVAILABLE
+            <span className="text-green-500 text-2xl">• </span> 2/5 SPOTS AVAILABLE
           </p>
 
-          <h1 className="font-inter text-[120px] font-extrabold leading-none">
-            WEB & DIGITAL
+          <h1 className="font-sans text-5xl sm:text-7xl md:text-[100px] font-extrabold leading-none">
+            BUILD
           </h1>
-          <h1 className="font-sans text-[120px] font-extrabold leading-none">
-            PRODUCT DESIGN
+          <h1 className="font-sans text-5xl sm:text-7xl md:text-[100px] font-extrabold leading-none">
+            BRAND & BOOST
           </h1>
 
-          <p className="text-sm font-inter sm:text-lg mt-4 text-gray-700 dark:text-white/80 leading-relaxed mb-8">
-            Resonance is a full-service creative studio creating beautiful
-            digital experiences and products.
+          <p className="text-sm font-sans sm:text-xl md:text-xl mt-4 text-gray-700 dark:text-white/80 leading-relaxed mb-8">
+            Web Design, Graphics, Social Media Marketing & Influencer Branding – All in One Place!
           </p>
         </Fade>
 
@@ -42,28 +40,26 @@ export default function Intro() {
           className="flex flex-wrap items-center justify-center gap-6"
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{
-            delay: 0.1,
-          }}
+          transition={{ delay: 0.1 }}
         >
           <Link
             href="#contact"
-            className="group bg-gray-900 text-white px-7 py-3 flex items-center font-inter gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:bg-gray-950 dark:bg-white/10 dark:hover:bg-gray-800 active:scale-95 transition-all"
+            className="group bg-black text-white px-6 py-3 sm:px-7 sm:py-3 flex items-center font-inter text-base sm:text-lg font-bold gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-95 transition-all dark:bg-white dark:text-black"
             onClick={() => {
               setActiveSection("#contact");
               setTimeOfLastClick(Date.now());
             }}
           >
-            Connect <Mail color={"#9ca3af"} />
+            Connect <Mail color={"#ffffff"} className="dark:fill-black" />
           </Link>
 
           <a
-            className="bg-gray-900 p-4 text-white flex items-center justify-center text-xl rounded-full focus:scale-105 hover:scale-105 active:scale-95 transition-all dark:bg-white/10 dark:text-white/80"
-            href="#"
+            className="bg-black p-3 sm:p-4 text-white flex items-center justify-center text-xl rounded-full focus:scale-105 hover:scale-110 active:scale-95 transition-all dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-300 hover:text-gray-100 dark:hover:text-gray-900"
+            href="https://www.linkedin.com/company/webloservices/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <BsLinkedin />
+            <BsLinkedin className="transition-all duration-300 transform hover:scale-110" />
           </a>
         </motion.div>
       </div>

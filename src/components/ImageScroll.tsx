@@ -11,7 +11,7 @@ export default function ImageScroll() {
     offset: ["start end", "end start"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 1], [1.4, 1]);
+  const scale = useTransform(scrollYProgress, [0, 1.2], [1.4, 1]);
 
   return (
     <div className="min-h-screen overflow-hidden">
@@ -21,7 +21,7 @@ export default function ImageScroll() {
         style={{ scale }}
       >
         <Image
-          src="/aboutImage.png"
+          src="/aboutImage.jpg"
           alt="Image"
           width={1920}
           height={1080}
