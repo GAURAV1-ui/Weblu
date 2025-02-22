@@ -16,7 +16,7 @@ export default function Intro() {
     <section
       ref={ref}
       id="home"
-      className="flex items-center justify-center min-h-screen max-w-full mx-auto px-4 text-center"
+      className="flex items-center justify-center min-h-screen max-w-full mx-auto text-center"
     >
       <div>
         <Fade direction="up" delay={400} cascade damping={0.1} triggerOnce>
@@ -25,14 +25,14 @@ export default function Intro() {
           </p>
 
           <h1 className="font-sans text-5xl sm:text-7xl md:text-[100px] font-extrabold leading-none">
-            BUILD
+            ALMOST THE BEST
           </h1>
-          <h1 className="font-sans text-5xl sm:text-7xl md:text-[100px] font-extrabold leading-none">
-            BRAND & BOOST
+          <h1 className="font-sans py-5 text-5xl sm:text-7xl md:text-[100px] font-extrabold leading-none">
+            <span className="bg-[#FF5A1E] px-2 -rotate-3 inline-block">DESIGN</span> AGENCY
           </h1>
 
-          <p className="text-sm font-sans sm:text-xl md:text-xl mt-4 text-gray-700 dark:text-white/80 leading-relaxed mb-8">
-            Web Design, Graphics, Social Media Marketing & Influencer Branding – All in One Place!
+          <p className="text-sm font-inter sm:text-xl md:text-xl mt-4 text-gray-700 dark:text-white leading-relaxed mb-8">
+            Web Development, Graphics, Social Media Marketing & Influencer Branding – All in One Place!
           </p>
         </Fade>
 
@@ -54,7 +54,7 @@ export default function Intro() {
           </Link>
 
           <a
-            className="bg-black p-3 sm:p-4 text-white flex items-center justify-center text-xl rounded-full focus:scale-105 hover:scale-110 active:scale-95 transition-all dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-300 hover:text-gray-100 dark:hover:text-gray-900"
+            className="bg-black p-3 sm:p-4 text-white flex items-center justify-center text-xl rounded-full focus:scale-105 hover:scale-110 active:scale-95 transition-all dark:bg-white dark:text-black hover:text-gray-100 dark:hover:text-gray-900"
             href="https://www.linkedin.com/company/webloservices/"
             target="_blank"
             rel="noopener noreferrer"

@@ -50,20 +50,19 @@ export default function Header({ links }: HeaderProps) {
       >
         <ul
           className="flex flex-wrap items-center justify-center gap-y-1 text-[1rem] 
-                 font-inter font-bold text-gray-900 dark:text-gray-200"
+                 font-inter font-bold text-black dark:text-white"
         >
           {links.map((link) => (
             <motion.li
-              className="flex items-center justify-center relative"
+              className="relative flex items-center justify-center px-3 py-3 group"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              whileHover={{ scale: 1.1 }}
             >
               <NextLink
                 className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 transition",
-                  "text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-gray-300"
+                  "flex w-full items-center justify-center transition",
+                 
                 )}
                 href={link.hash}
                 onClick={() => {
@@ -71,25 +70,13 @@ export default function Header({ links }: HeaderProps) {
                   setTimeOfLastClick(Date.now());
                 }}
               >
-                <motion.span
-                  whileHover={{ scale: 1.1 }}
-                  animate={
-                    activeSection === link.hash ? { scale: 1.15 } : { scale: 1 }
-                  }
-                  transition={{ type: "spring", stiffness: 200, damping: 15 }}
-                >
-                  {link.nameEng}
-                </motion.span>
-
-                {link.hash === activeSection && (
-                  <motion.div
-                    className="absolute bottom-2 left-2 w-[85%] h-[3px] 
-                         bg-black dark:bg-white"
-                    layoutId="underline"
-                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                  />
-                )}
+                <motion.span>{link.nameEng}</motion.span>
               </NextLink>
+              <motion.div
+  className="absolute bottom-2 left-1/2 -translate-x-1/2 w-[80%] h-[3px] bg-black dark:bg-white 
+             origin-center scale-x-0 transition-transform duration-300 ease-in-out 
+             group-hover:scale-x-100"
+/>
             </motion.li>
           ))}
         </ul>

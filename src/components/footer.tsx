@@ -7,6 +7,7 @@ export default function Footer() {
     //     &copy; 2024 WEBLO . ALL RIGHTS RESERVED.
     //   </small>
     // </footer>
-    <></>
+    <> </>
+
   );
 }
