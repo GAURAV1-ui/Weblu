@@ -13,7 +13,7 @@ const textVariants = {
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen bg-white text-black text-center p-6 font-inter">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen bg-[#FFFFE1] dark:bg-white text-black text-center p-6 font-inter">
       <motion.h1
         className="font-sans text-5xl md:text-9xl font-bold"
         variants={textVariants}

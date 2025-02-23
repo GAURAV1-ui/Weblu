@@ -21,7 +21,7 @@ const interTight = Inter_Tight({
 });
 
 export const metadata: Metadata = {
-  title: "WebLu",
+  title: "WebLo",
   description: "Frontend Advance Personal portfolio",
 };
 

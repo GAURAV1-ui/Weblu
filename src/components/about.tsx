@@ -17,21 +17,13 @@ export default function AboutUs() {
           Our Path Forward
         </h2>
         <p className="font-sans text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
-          As a young team, we develop content that the unreachable want to see
-          and build sustainable communities. Facts: 65% of social media ads are
-          swiped away in the first 2.5 seconds. We are changing that and
-          creating content that the unreachable are interested in. We ensure
-          that these people enjoy seeing your advertising.
+        At Weblo, we create data-driven marketing strategies that not only attract attention but drive real results. From brand awareness to lead generation, we blend innovation, storytelling, and cutting-edge tech to help your brand thrive. Let’s turn ideas into impact and fuel lasting growth together! 
         </p>
         <h2 className="font-inter text-2xl font-bold uppercase tracking-wider">
           Behind the Scenes
         </h2>
         <p className="font-sans text-xl text-gray-600 dark:text-gray-400 leading-relaxed">
-          We are the world's first agency dedicated to targeting the elusive—
-          those who live social-first and instinctively swipe away ads that
-          fail to capture their attention. Our innovative approach is tailored
-          to connect with this elusive audience through engaging, authentic
-          content that resonates with their unique preferences and habits.
+        At Weblo, we blend creativity with data to craft impactful digital campaigns. Our team of strategists, designers, and developers collaborates to elevate brands through research, trends, and innovation. We focus on delivering measurable results to help businesses thrive in the digital world. Your success is our mission.
         </p>
         <div className="flex items-center gap-4">
           <Image

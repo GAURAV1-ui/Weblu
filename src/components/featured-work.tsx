@@ -36,7 +36,7 @@ export default function FeaturedWork() {
   return (
     <section
       id="home"
-      className="flex items-center justify-center min-h-screen w-full rounded-xl mx-auto px-4 py-4 sm:px-8 lg:px-16 transition-colors duration-300"
+      className="flex items-center justify-center min-h-screen w-full mx-auto px-4 py-4 sm:px-8 lg:px-16 bg-white transition-colors duration-300"
     >
       <div className="w-full">
         <Fade direction="up" delay={400} cascade damping={0.1}>

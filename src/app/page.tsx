@@ -1,5 +1,5 @@
 import Intro from "@/components/intro";
-import FeaturedWork from "@/components/featuredWork";
+import FeaturedWork from "@/components/featured-work";
 import  Faq  from "@/components/faq";
 import ImageScroll from "@/components/ImageScroll";
 import AboutUs from "@/components/about";
@@ -8,7 +8,7 @@ import Contact from "@/components/contact";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center">
+    <main className="">
       <Intro />
       <FeaturedWork />
       <Faq />

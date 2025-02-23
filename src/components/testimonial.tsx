@@ -100,7 +100,6 @@ const Testimonial = () => {
         </Ticker>
       </div>
 
-      {/* Right to Left Ticker */}
       <div className="relative">
         <div className="absolute inset-y-0 left-0 right-0 z-10 bg-gradient-to-l from-white/70 via-transparent to-transparent dark:from-black pointer-events-none" />
         <Ticker duration={30} direction={1}>
