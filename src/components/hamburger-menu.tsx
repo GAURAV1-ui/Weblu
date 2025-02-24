@@ -7,6 +7,7 @@ import clsx from "clsx";
 import NextLink from "next/link";
 import { useActiveSectionContext } from "@/containers/active-section";
 import Hamburger from "hamburger-react";
+import Image from "next/image";
 
 type HamburgerMenuProps = { links: Link[] };
 
@@ -28,16 +29,34 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ links }) => {
   };
 
   return (
-    <div className="md:hidden top-5 right-5 flex flex-col items-end gap-2">
-      <motion.button
-        className="bg-white w-[3rem] h-[3rem] drop-shadow backdrop-blur-[0.5rem] border border-slate-400 dark:border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center dark:bg-gray-950"
-        variants={menuTrigger}
-        initial="visible"
-        whileTap="tap"
-        whileHover="hover"
-      >
-        <Hamburger toggled={isOpen} toggle={setIsOpen} size={20} />
-      </motion.button>
+    <div className="md:hidden">
+      <div className="items-center flex justify-between w-full p-2">
+        <NextLink href="/" passHref>
+          <Image
+            src="/weblob.png"
+            alt="WebLo"
+            width={40}
+            height={40}
+            className="w-[120px] block dark:hidden"
+          />
+          <Image
+            src="/weblow.png"
+            alt="WebLo"
+            width={40}
+            height={40}
+            className="w-[120px] hidden dark:block"
+          />
+        </NextLink>
+        <motion.button
+          className="bg-white w-[3rem] h-[3rem] drop-shadow backdrop-blur-[0.5rem] border border-slate-400 dark:border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center dark:bg-gray-950"
+          variants={menuTrigger}
+          initial="visible"
+          whileTap="tap"
+          whileHover="hover"
+        >
+          <Hamburger toggled={isOpen} toggle={setIsOpen} size={20} />
+        </motion.button>
+      </div>
       
       <AnimatePresence>
         {isOpen && (
@@ -45,7 +64,7 @@ const HamburgerMenu: React.FC<HamburgerMenuProps> = ({ links }) => {
             variants={menuList}
             initial="start"
             animate="visible"
-            className=" w-full bg-white drop-shadow  border border-slate-400 dark:border-white border-opacity-60 shadow-2xl rounded-2xl flex flex-col items-center justify-center dark:bg-gray-950 p-1"
+            className=" w-full bg-white drop-shadow border border-slate-400 dark:border-white border-opacity-60 shadow-2xl rounded-2xl flex flex-col items-center justify-center dark:bg-gray-950 p-1"
           >
             {links.map((link, index) => (
               <motion.div

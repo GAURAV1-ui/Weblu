@@ -1,8 +1,8 @@
 "use client";
 
+import CalendlyEmbed from "@/containers/calendly-embed";
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { InlineWidget } from "react-calendly";
 
 interface ContactSidebarProps {
   isOpen: boolean;
@@ -28,7 +28,7 @@ export default function ContactSidebar({ isOpen, onClose }: ContactSidebarProps)
       animate={{ x: isOpen ? "0%" : "100%" }}
       exit={{ x: "100%" }}
       transition={{ type: "tween", duration: 0.4 }}
-      className="fixed top-0 right-0 z-10 h-full w-1/2 bg-white dark:bg-black shadow-lg p-6 flex flex-col"
+      className="fixed top-0 right-0 z-10 h-screen w-1/2 bg-white dark:bg-black shadow-lg p-6 flex flex-col overflow-y-auto"
     >
       <button
         className="absolute top-4 right-4 text-gray-700 dark:text-white"
@@ -37,30 +37,34 @@ export default function ContactSidebar({ isOpen, onClose }: ContactSidebarProps)
         ✕
       </button>
 
-      <h2 className="text-xl font-bold text-black dark:text-white mb-4 text-center">Contact Us</h2>
+      <h2 className="text-xl font-bold text-black dark:text-white mb-4 text-center">
+        Contact Us
+      </h2>
 
-      
+      <div className="mt-6 h-full w-full">
+        <CalendlyEmbed url="https://calendly.com/iamgaurav201/30min" />
+      </div>
 
-      <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
+      <form onSubmit={handleSubmit} className="flex flex-col space-y-4 mt-6">
         <input
           type="text"
           name="name"
           placeholder="Name"
           required
-          className="p-4 bg-white text-[#727272] rounded-md w-full"
+          className="p-4 bg-white text-[#727272] rounded-md w-full border border-gray-300"
         />
         <input
           type="email"
           name="email"
           placeholder="E-Mail"
           required
-          className="p-4 bg-white text-[#727272] rounded-md w-full"
+          className="p-4 bg-white text-[#727272] rounded-md w-full border border-gray-300"
         />
         <textarea
           name="message"
           placeholder="Message"
           rows={5}
-          className="p-4 bg-white text-[#727272] rounded-md w-full"
+          className="p-4 bg-white text-[#727272] rounded-md w-full border border-gray-300"
         ></textarea>
         <motion.button
           type="submit"
@@ -70,12 +74,6 @@ export default function ContactSidebar({ isOpen, onClose }: ContactSidebarProps)
           {formSubmitted ? "Sent!" : "Send Message"}
         </motion.button>
       </form>
-
-      <div className="mt-6">
-        <h3 className="text-lg font-semibold text-black dark:text-white">Book a Call</h3>
-        <InlineWidget url="https://calendly.com/your_scheduling_page" />
-      </div>
-
     </motion.div>
   );
 }

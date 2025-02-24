@@ -36,13 +36,13 @@ export default function FeaturedWork() {
   return (
     <section
       id="home"
-      className="flex items-center justify-center min-h-screen w-full mx-auto px-4 py-4 sm:px-8 lg:px-16 bg-white transition-colors duration-300"
+      className="flex items-center justify-center min-h-screen w-full mx-auto px-4 py-4 mb--5 sm:px-8 lg:px-16 bg-white transition-colors duration-300"
     >
       <div className="w-full">
         <Fade direction="up" delay={400} cascade damping={0.1}>
           <div className="flex flex-col md:flex-row justify-between items-center mb-8">
             <div className="flex-1">
-              <h1 className="font-inter text-[48px] sm:text-[64px] font-extrabold leading-tight text-gray-900 dark:text-white mb-4 md:mb-0">
+              <h1 className="font-inter text-[48px] sm:text-[64px] font-extrabold leading-tight text-white dark:text-gray-900 mb-4 md:mb-0">
                 FEATURED WORK
               </h1>
             </div>
@@ -62,7 +62,7 @@ export default function FeaturedWork() {
               <motion.div
                 key={index}
                 ref={ref}
-                className="bg-transparent backdrop-blur-[20px] border rounded-xl border-gray-300 dark:border-white/30 overflow-hidden transform transition-all duration-300 ease-in-out"
+                className="bg-transparent backdrop-blur-[20px] border rounded-xl border-white/30 dark:border-gray-300 overflow-hidden transform transition-all duration-300 ease-in-out"
                 initial={{ opacity: 0, y: 50 }}
                 animate={inView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] }}
@@ -77,7 +77,7 @@ export default function FeaturedWork() {
                   </div>
                   <motion.div className="flex items-center justify-center px-6 py-1" whileHover={{ scale: 1.08 }} transition={{ duration: 0.8, ease: "easeInOut" }}>
                     <motion.p
-                      className="font-sans border border-gray-500 dark:border-white/50 px-6 py-1 rounded-full text-gray-700 dark:text-gray-400 font-semibold"
+                      className="font-sans border border-white/50 dark:border-gray-500 px-6 py-1 rounded-full text-gray-700 dark:text-gray-400 font-semibold"
                       whileHover={{ scale: 1.05 }}
                       transition={{ duration: 0.8 }}
                     >
