@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { Instrument_Sans, Inter_Tight } from 'next/font/google';
 import "./globals.css";
 import Providers from "@/containers/providers";
-import Footer from "@/components/footer";
-import ThemeSwitch from "@/components/theme-controller";
-import Navbar from "@/components/navbar";
+import Footer from "@/components/layout/footer";
+import ThemeSwitch from "@/components/ui/theme-controller";
+import Navbar from "@/components/layout/navbar";
 
 const instrumentSans = Instrument_Sans({
   subsets: ['latin'],
-  weight: ['400', '500', '700',],
+  weight: ['400', '500', '700'],
   variable: '--font-instrument-sans',
   display: 'swap',
 });
@@ -22,7 +22,7 @@ const interTight = Inter_Tight({
 
 export const metadata: Metadata = {
   title: "WebLo",
-  description: "Frontend Advance Personal portfolio",
+  description: "Frontend Advanced Personal Portfolio",
 };
 
 export default function RootLayout({
@@ -34,17 +34,18 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body
         className={`${instrumentSans.variable} ${interTight.variable}
-        flex flex-col
-        bg-[#F9FAFB]
-        text-gray-950 relative
-        dark:bg-[#0F0F10] 
-        dark:text-gray-50 dark:text-opacity-90`}
+        min-h-screen relative bg-white dark:bg-black
+        antialiased`}
       >
         <Providers>
-          <Navbar />
-          {children}
-          <Footer />
-          <ThemeSwitch />
+          <div className="min-h-screen relative">
+            <Navbar />
+            <main className="relative z-10">
+              {children}
+            </main>
+            <Footer />
+            <ThemeSwitch />
+          </div>
         </Providers>
       </body>
     </html>

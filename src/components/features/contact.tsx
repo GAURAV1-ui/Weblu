@@ -13,7 +13,7 @@ const textVariants = {
 
 const Contact = () => {
   return (
-    <div className="flex flex-col items-center justify-center w-full min-h-screen bg-[#FFFFE1] dark:bg-white text-black text-center p-6 font-inter">
+    <div className="flex flex-col items-center justify-center w-full min-h-screen bg-white dark:bg-black text-black dark:text-white text-center p-6 font-inter">
       <motion.h1
         className="font-sans text-5xl md:text-9xl font-bold"
         variants={textVariants}
@@ -28,7 +28,7 @@ const Contact = () => {
       </motion.h1>
 
       <motion.button
-        className="mt-6 px-6 py-3 bg-black text-white font-bold text-lg rounded-full transition"
+        className="mt-6 px-6 py-3 bg-black dark:bg-white text-white dark:text-black font-bold text-lg rounded-full transition hover:opacity-90"
         variants={textVariants}
         initial="hidden"
         whileInView="visible"
@@ -41,20 +41,20 @@ const Contact = () => {
       </motion.button>
 
       <motion.p
-        className="mt-6 max-w-2xl text-sm md:text-lg font-medium text-gray-700"
+        className="mt-6 max-w-2xl text-sm md:text-lg font-medium text-black/80 dark:text-white/80"
         variants={textVariants}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: false }}
         custom={2}
       >
-        BASED IN TOKYO, I AM AN INNOVATIVE DESIGNER AND DIGITAL ARTIST. MY
-        PASSION FOR MINIMALIST AESTHETICS, ELEGANT TYPOGRAPHY, AND INTUITIVE
-        DESIGN IS EVIDENT IN MY WORK.
+      BASED IN INDIA, WE CRAFT IMPACTFUL BRANDS THROUGH WEB DEVELOPMENT, UI/UX DESIGN, AND DIGITAL MARKETING.
+      <br />
+      MINIMAL. MEANINGFUL. MADE TO STAND OUT.
       </motion.p>
 
       <motion.div
-        className="mt-6 flex space-x-6 text-sm md:text-xl text-black"
+        className="mt-6 flex space-x-6 text-sm md:text-xl text-black dark:text-white"
         variants={textVariants}
         initial="hidden"
         whileInView="visible"
@@ -70,7 +70,7 @@ const Contact = () => {
           >
             {platform} ↗
             <motion.span
-              className="absolute left-0 bottom-0 h-[2px] bg-black w-full"
+              className="absolute left-0 bottom-0 h-[2px] bg-black dark:bg-white w-full"
               initial={{ scaleX: 0 }}
               animate={{ scaleX: 0 }}
               whileHover={{ scaleX: 1, transition: { duration: 0.3 } }}
@@ -79,23 +79,6 @@ const Contact = () => {
             />
           </motion.a>
         ))}
-      </motion.div>
-
-      <motion.div
-        className="relative w-full mt-10 flex flex-col items-center"
-        variants={textVariants}
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: false }}
-        custom={5}
-      >
-        <div className="relative w-full h-[1px] bg-gray-400 overflow-hidden">
-          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-black to-transparent opacity-50 animate-glow"></div>
-        </div>
-
-        <p className="text-gray-600 text-sm font-semibold mt-3">
-          &copy; 2024 WEBLO . ALL RIGHTS RESERVED.
-        </p>
       </motion.div>
     </div>
   );

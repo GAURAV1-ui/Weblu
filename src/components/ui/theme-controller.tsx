@@ -9,11 +9,11 @@ export default function ThemeSwitch() {
   const { theme, toggleTheme } = useTheme();
 
   return (
-    <div className="fixed bottom-5 right-5">
+    <div className="fixed bottom-5 right-5 z-50">
       <Switch
-        activeButton={theme === "light" ? <Sun /> : <Moon />}
+        activeButton={theme === "light" ? <Sun size={20} /> : <Moon size={20} />}
         hiddenButton={
-          theme === "light" ? <Moon size={14} /> : <Sun size={14} />
+          theme === "light" ? <Moon size={16} /> : <Sun size={16} />
         }
         setActiveButton={toggleTheme}
       />

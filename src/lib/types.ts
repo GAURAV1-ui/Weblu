@@ -1,18 +1,22 @@
 import { links } from "./data";
 
-export type SectionName = (typeof links)[number]["hash"];
+export type SectionName = "#home" | "#about" | "#projects" | "#contact";
 
-export type ProjectInfo = {
-  title: string;
-  description: string;
-  tags: string[];
-  imageUrl: string;
-  link: string;
-};
+// export type ProjectInfo = {
+//   title: string;
+//   description: string;
+//   tags: string[];
+//   imageUrl: string;
+//   link: string;
+// };
+
+export type Services = {
+  
+}
 
 export type Link = {
   nameEng: string;
-  hash: string;
+  hash: SectionName;
 };
 
 
@@ -30,3 +34,27 @@ type About = {
 export type Texts = {
   about: About;
 };
+
+export type FAQ = {
+  question: string;
+  answer: string[];
+};
+
+export type Category = {
+  id: string;
+  name: string;
+  description: string;
+  imageUrl: string;
+  services: {
+    title: string;
+    description: string;
+  }[];
+};
+
+export type Project = {
+  title: string;
+  category: string;
+  year: string;
+  imageUrl: string;
+};
+

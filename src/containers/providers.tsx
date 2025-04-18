@@ -14,7 +14,6 @@ export default function Providers({ children }: ProvidersProps) {
   return (
     <ThemeContextProvider>
         <ActiveSectionContextProvider>
-          {/* <Analytics /> */}
           <Toaster />
           {children}
         </ActiveSectionContextProvider>

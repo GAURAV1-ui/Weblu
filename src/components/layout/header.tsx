@@ -7,7 +7,7 @@ import clsx from "clsx";
 import { useActiveSectionContext } from "@/containers/active-section";
 import { Link } from "@/lib/types";
 import Image from "next/image";
-import ContactSidebar from "./contact-sidebar";
+import ContactSidebar from "@/components/features/contact-sidebar";
 
 type HeaderProps = { links: Link[] };
 

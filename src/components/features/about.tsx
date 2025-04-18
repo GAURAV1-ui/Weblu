@@ -6,6 +6,24 @@ import Image from "next/image";
 export default function AboutUs() {
   return (
     <section className="flex flex-col-reverse lg:flex-row items-center justify-center min-h-screen w-full mx-auto px-4 sm:px-8 lg:px-16 text-gray-900 dark:text-white transition-colors duration-300">
+          {/* <div className="absolute bottom-0 left-0 right-0 p-4 sm:p-6 md:p-8 text-white">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold mb-2"
+          >
+            Discover Our Story
+          </motion.h2>
+          <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.2 }}
+            className="text-sm sm:text-base md:text-lg text-white/80 max-w-2xl"
+          >
+            Explore our journey and learn how we're shaping the future of digital experiences.
+          </motion.p>
+        </div> */}
       <motion.div
         className="space-y-8 max-w-3xl lg:w-1/2 text-center lg:text-left"
         initial={{ opacity: 0, x: -50 }}
@@ -41,8 +59,8 @@ export default function AboutUs() {
         transition={{ duration: 0.8, ease: "easeInOut" }}
       >
         <h2 className="text-5xl font-sans font-extrabold">
-          VOICE OF{" "}
-          <span className="text-[#FF5A1E] font-extrabold">CE-YO.</span>
+          VOICE OF{"  "}
+          <span className="text-6xl text-[#FF5A1E] font-extrabold">CE-YO.</span>
         </h2>
         <div className="mt-8 hidden lg:block">
           <Image src="/CEYOABHI.jpg" alt="CE-YO" width={400} height={400} className="rounded-lg shadow-lg mx-auto" />

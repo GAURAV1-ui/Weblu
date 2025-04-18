@@ -1,4 +1,4 @@
-import { Link, ProjectInfo } from "./types";
+import { Link, FAQ, Project, Category } from "./types";
 
 export const links: Link[] = [
   {
@@ -10,101 +10,161 @@ export const links: Link[] = [
     hash: "#about",
   },
   {
-     nameEng: "PROJECTS",
-     hash: "#projects",
-   },
+    nameEng: "PROJECTS",
+    hash: "#projects",
+  },
   {
     nameEng: "CONTACT",
     hash: "#contact",
   },
 ];
 
-// export const projectsData: ProjectInfo[] = [
-//   {
-//     title: "Snowlake Theme",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-//     tags: ["React", "Next.js", "MongoDB", "Tailwind", "NodeJS"],
-//     imageUrl: "/image1.png",
-//     link: "https://www.google.com",
-//   },
-//   {
-//     title: "Budget App",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-//     tags: ["React", "Next.js", "MongoDB", "Tailwind", "NodeJS"],
-//     imageUrl: "/image2.png",
-//     link: "https://www.google.com",
-//   },
-//   {
-//     title: "Storage App",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-//     tags: ["React", "Next.js", "MongoDB", "Tailwind", "NodeJS"],
-//     imageUrl: "/image3.png",
-//     link: "https://www.google.com",
-//   },
-//   {
-//     title: "Missio Theme",
-//     description:
-//       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-//     tags: ["React", "Next.js", "MongoDB", "Tailwind", "NodeJS"],
-//     imageUrl: "/image4.png",
-//     link: "https://www.google.com",
-//   },
-// ];
-
-export const projects = [
+export const faqs: FAQ[] = [
   {
-    title: "Matthias Leidinger",
-    description: "Originally hailing from Austria, Berlin-based photographer Matthias Leindinger is a young creative brimming with talent and ideas.",
-    src: "rock.jpg",
-    link: "https://www.ignant.com/2023/03/25/ad2186-matthias-leidingers-photographic-exploration-of-awe-and-wonder/",
-    color: "#BBACAF"
+    question: "What services do you offer?",
+    answer: [
+      "We offer a comprehensive range of services including web development, design, and digital marketing.",
+      "Our team specializes in creating custom solutions tailored to your business needs."
+    ]
   },
   {
-    title: "Clément Chapillon",
-    description: "This is a story on the border between reality and imaginary, about the contradictory feelings that the insularity of a rocky, arid, and wild territory provokes”—so French photographer Clément Chapillon describes his latest highly captivating project Les rochers fauves (French for ‘The tawny rocks’).",
-    src: "tree.jpg",
-    link: "https://www.ignant.com/2022/09/30/clement-chapillon-questions-geographical-and-mental-isolation-with-les-rochers-fauves/",
-    color: "#977F6D"
+    question: "How long does a typical project take?",
+    answer: [
+      "Project timelines vary depending on scope and complexity.",
+      "We provide detailed project plans with clear milestones and deadlines."
+    ]
   },
   {
-    title: "Zissou",
-    description: "Though he views photography as a medium for storytelling, Zissou’s images don’t insist on a narrative. Both crisp and ethereal, they’re encoded with an ambiguity—a certain tension—that lets the viewer find their own story within them.",
-    src: "water.jpg",
-    link: "https://www.ignant.com/2023/10/28/capturing-balis-many-faces-zissou-documents-the-sacred-and-the-mundane-of-a-fragile-island/",
-    color: "#C2491D"
+    question: "What is your pricing structure?",
+    answer: [
+      "We offer flexible pricing options based on project requirements.",
+      "Contact us for a detailed quote tailored to your specific needs."
+    ]
   },
   {
-    title: "Mathias Svold and Ulrik Hasemann",
-    description: "The coastlines of Denmark are documented in tonal colors in a pensive new series by Danish photographers Ulrik Hasemann and Mathias Svold; an ongoing project investigating how humans interact with and disrupt the Danish coast.",
-    src: "house.jpg",
-    link: "https://www.ignant.com/2019/03/13/a-photographic-series-depicting-the-uncertain-future-of-denmarks-treasured-coastlines/",
-    color: "#B62429"
+    question: "Do you provide ongoing support?",
+    answer: [
+      "Yes, we offer maintenance and support packages for all our services.",
+      "Our team is available to help you with any post-launch needs."
+    ]
   },
   {
-    title: "Mark Rammers",
-    description: "Dutch photographer Mark Rammers has shared with IGNANT the first chapter of his latest photographic project, ‘all over again’—captured while in residency at Hektor, an old farm in Los Valles, Lanzarote. Titled ‘Beginnings’, the mesmerizing collection of images is a visual and meditative journey into the origins of regrets and the uncertainty of stepping into new unknowns.",
-    src: "cactus.jpg",
-    link: "https://www.ignant.com/2023/04/12/mark-rammers-all-over-again-is-a-study-of-regret-and-the-willingness-to-move-forward/",
-    color: "#88A28D"
+    question: "How do you measure success?",
+    answer: [
+      "We track key performance indicators specific to your goals.",
+      "Regular reporting and analytics help us ensure your success."
+    ]
   }
-]
-
-export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux Toolkit",
-  "Express",
-  "Framer Motion",
 ];
+
+export const categories: Category[] = [
+  {
+    id: "web-development",
+    name: "Web Development",
+    description: "Custom web solutions for your business needs",
+    imageUrl: "/1.jpeg",
+    services: [
+      {
+        title: "Custom Website Development",
+        description: "Tailored websites built with modern technologies and best practices"
+      },
+      {
+        title: "E-commerce Solutions",
+        description: "Online stores with secure payment gateways and inventory management"
+      },
+      {
+        title: "Web Applications",
+        description: "Interactive web applications with responsive design and modern UI/UX"
+      }
+    ]
+  },
+  {
+    id: "design",
+    name: "Design",
+    description: "Creative design solutions for your brand",
+    imageUrl: "/2.jpeg",
+    services: [
+      {
+        title: "UI/UX Design",
+        description: "User-centered design for optimal user experience"
+      },
+      {
+        title: "Brand Identity",
+        description: "Complete brand identity design including logo and guidelines"
+      },
+      {
+        title: "Graphic Design",
+        description: "Print and digital design for marketing materials"
+      }
+    ]
+  },
+  {
+    id: "marketing",
+    name: "Marketing",
+    description: "Digital marketing strategies for growth",
+    imageUrl: "/4.jpeg",
+    services: [
+      {
+        title: "Social Media Marketing",
+        description: "Strategic social media campaigns and content creation"
+      },
+      {
+        title: "SEO Optimization",
+        description: "Search engine optimization for better visibility"
+      },
+      {
+        title: "Content Marketing",
+        description: "Engaging content strategy and creation"
+      }
+    ]
+  },
+  {
+    id: "ui-ux",
+    name: "UI/UX",
+    description: "Creative design solutions for your brand",
+    imageUrl: "/5.jpeg",
+    services: [
+      {
+        title: "UI/UX Design",
+        description: "User-centered design for optimal user experience"
+      },
+      {
+        title: "Brand Identity",
+        description: "Complete brand identity design including logo and guidelines"
+      },
+      {
+        title: "Graphic Design",
+        description: "Print and digital design for marketing materials"
+      }
+    ]
+  },
+];
+
+export const projects: Project[] = [
+  {
+    title: "LIGHTRIC MOTORS",
+    category: "Web Development",
+    year: "2023",
+    imageUrl: "/5.jpeg"
+  },
+  {
+    title: "POSITIVE ENERGY",
+    category: "Design",
+    year: "2023",
+    imageUrl: "/2.jpeg"
+  },
+  {
+    title: "XIONG WALL",
+    category: "Marketing",
+    year: "2023",
+    imageUrl: "/3.jpeg"
+  },
+  {
+    title: "HIDEAWAY",
+    category: "Web Development",
+    year: "2023",
+    imageUrl: "/4.jpeg"
+  }
+];
+
+

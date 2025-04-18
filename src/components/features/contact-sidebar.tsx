@@ -37,7 +37,7 @@ export default function ContactSidebar({ isOpen, onClose }: ContactSidebarProps)
         ✕
       </button>
 
-      <h2 className="text-xl font-bold text-black dark:text-white mb-4 text-center">
+      <h2 className="text-3xl font-inter text-black dark:text-white mb-4 text-center">
         Contact Us
       </h2>
 
@@ -69,7 +69,7 @@ export default function ContactSidebar({ isOpen, onClose }: ContactSidebarProps)
         <motion.button
           type="submit"
           whileTap={{ scale: 0.95 }}
-          className="py-3 px-6 bg-white text-black font-semibold rounded-md w-full"
+          className="py-3 px-6 bg-white text-black font-inter font-bold rounded-md w-full"
         >
           {formSubmitted ? "Sent!" : "Send Message"}
         </motion.button>

@@ -2,14 +2,84 @@
 @tailwind components;
 @tailwind utilities;
 
-  
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-base leading-relaxed text-black dark:text-white bg-white dark:bg-black;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display font-bold tracking-tight text-black dark:text-white;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl lg:text-4xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl lg:text-3xl;
+  }
+
+  p, span, li {
+    @apply text-base md:text-lg text-black dark:text-white;
+  }
+
+  small {
+    @apply text-sm md:text-base;
+  }
+
+  a {
+    @apply text-base md:text-lg text-black dark:text-white hover:opacity-80 transition-opacity;
+  }
+
+  img {
+    @apply max-w-full h-auto;
+  }
 }
 
+@layer components {
+  .btn {
+    @apply inline-flex items-center justify-center px-4 py-2 rounded-lg font-medium transition-colors text-base md:text-lg text-black dark:text-white;
+  }
 
+  .btn-primary {
+    @apply btn bg-black dark:bg-white text-white dark:text-black hover:bg-opacity-90;
+  }
+
+  .btn-secondary {
+    @apply btn border-2 border-black dark:border-white hover:bg-black dark:hover:bg-white hover:text-white dark:hover:text-black;
+  }
+
+  .container-padding {
+    @apply px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-12 sm:py-16 lg:py-20;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
 
   

@@ -17,8 +17,8 @@ export default function Switch({
   const [isHovered, setIsHovered] = useState(false);
 
   const switchVariants = {
-    visible: { scale: 1, opacity: 0.7, y: 0 },
-    hover: { scale: 1.2 },
+    visible: { scale: 1, opacity: 1, y: 0 },
+    hover: { scale: 1.1 },
     hidden: { scale: 0.5, opacity: 0, y: 50 },
   };
 
@@ -33,7 +33,7 @@ export default function Switch({
             exit="hidden"
             variants={switchVariants}
             transition={{ duration: 0.3 }}
-            className="hidden  md:flex items-center justify-center w-[2rem] h-[2rem] bg-white  drop-shadow backdrop-blur-[0.5rem] border border-slate-400 dark:border-white border-opacity-40 shadow-2xl rounded-full dark:bg-gray-950"
+            className="flex items-center justify-center w-[2rem] h-[2rem] bg-white dark:bg-gray-950 drop-shadow backdrop-blur-[0.5rem] border border-slate-400 dark:border-white border-opacity-40 shadow-2xl rounded-full"
           >
             <p className="text-sm font-semibold">{hiddenButton}</p>
           </motion.button>
@@ -41,7 +41,7 @@ export default function Switch({
       </AnimatePresence>
 
       <motion.button
-        className="bg-white w-[3rem] h-[3rem] drop-shadow backdrop-blur-[0.5rem] border border-slate-400 dark:border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center dark:bg-gray-950"
+        className="bg-white dark:bg-gray-950 w-[3rem] h-[3rem] drop-shadow backdrop-blur-[0.5rem] border border-slate-400 dark:border-white border-opacity-40 shadow-2xl rounded-full flex items-center justify-center"
         variants={switchVariants}
         initial="visible"
         whileHover="hover"

@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import { colors, typography } from "./src/lib/theme";
 
 const config: Config = {
   content: [
@@ -8,15 +9,21 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      
+      colors: {
+        primary: colors.primary,
+        secondary: colors.secondary,
+        background: colors.background,
+        text: colors.text,
+        accent: colors.accent,
+      },
+      fontFamily: typography.fontFamily,
+      fontSize: typography.fontSize,
+      fontWeight: typography.fontWeight,
+      lineHeight: typography.lineHeight,
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-      fontFamily: {
-        sans: ['var(--font-instrument-sans)', 'sans-serif'],
-        inter: ['var(--font-inter-tight)', 'sans-serif'],
       },
     },
   },
